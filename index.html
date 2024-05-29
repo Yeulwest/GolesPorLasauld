@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goles por la Salud</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         /* Estilos generales */
         body {
@@ -79,6 +80,38 @@
             line-height: 1.6;
         }
 
+        ul {
+            padding-left: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            padding: 10px;
+            font-size: 16px;
+            color: white;
+            background-color: #005D6E;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #FF9F1C;
+        }
+
         /* Estilos de media query para pantallas pequeñas */
         @media only screen and (max-width: 600px) {
             header {
@@ -107,7 +140,6 @@
 <body>
 
 <header>
-    <!-- Cambia el enlace de la siguiente línea -->
     <h1><a href="index.html" style="color: white; text-decoration: none;">Goles por la Salud</a></h1>
     <nav>
         <ul>
@@ -115,6 +147,7 @@
             <li><a href="#programs">Nuestros Programas</a></li>
             <li><a href="#join">Únete a Nosotros</a></li>
             <li><a href="#events">Eventos</a></li>
+            <li><a href="#expenses">Distribución de Gastos</a></li>
             <li><a href="#contact">Contáctanos</a></li>
         </ul>
     </nav>
@@ -124,7 +157,7 @@
 
 <section id="about">
     <h2>Acerca de Nosotros</h2>
-    <p>¡Bienvenido a Goles por la Salud! Somos una organización sin fines de lucro dedicada a promover un estilo de vida saludable a través del deporte, especialmente el fútbol...</p>
+    <p>¡Bienvenido a Goles por la Salud! Somos una organización sin fines de lucro dedicada a promover un estilo de vida saludable a través del deporte, especialmente el fútbol. Nuestro objetivo es mejorar la salud física y mental de niños y jóvenes en comunidades desfavorecidas.</p>
 </section>
 
 <section id="programs">
@@ -156,21 +189,43 @@
         <li>
             <h3>Torneo de Fútbol Solidario</h3>
             <p>Fecha: 15 de Julio de 2024<br>Lugar: Estadio Municipal<br>Descripción: Únete a nuestro torneo de fútbol solidario. ¡Diviértete mientras apoyas una buena causa!</p>
+            <p>El evento incluirá juegos para todas las edades, música en vivo, y una feria de comida saludable. Todos los fondos recaudados serán destinados a nuestros programas sociales.</p>
         </li>
         <li>
             <h3>Charla sobre Nutrición</h3>
             <p>Fecha: 20 de Agosto de 2024<br>Lugar: Centro Comunitario<br>Descripción: Aprende sobre la importancia de una dieta equilibrada y cómo mejorar tu salud a través de la alimentación.</p>
+            <p>Expertos en nutrición compartirán consejos prácticos y responderán a preguntas del público. Además, habrá demostraciones de cocina saludable.</p>
         </li>
         <li>
             <h3>Marcha por la Salud Mental</h3>
             <p>Fecha: 10 de Septiembre de 2024<br>Lugar: Plaza Principal<br>Descripción: Únete a nuestra marcha para concienciar sobre la importancia de cuidar la salud mental.</p>
+            <p>La marcha culminará en un evento comunitario con charlas motivacionales, actividades recreativas y recursos para apoyar la salud mental.</p>
         </li>
     </ul>
 </section>
 
+<section id="expenses">
+    <h2>Distribución de Gastos</h2>
+    <p>En Goles por la Salud, nos aseguramos de que cada donación se utilice de la manera más efectiva posible. A continuación, se muestra cómo distribuimos nuestros fondos:</p>
+    <ul>
+        <li><strong>Programas de Fútbol:</strong> 40%</li>
+        <li><strong>Educación en Nutrición:</strong> 25%</li>
+        <li><strong>Talleres de Salud Mental:</strong> 20%</li>
+        <li><strong>Organización de Eventos:</strong> 10%</li>
+        <li><strong>Administración:</strong> 5%</li>
+    </ul>
+    <p>Nos comprometemos a mantener la transparencia financiera y a utilizar los recursos de manera eficiente para maximizar nuestro impacto en la comunidad.</p>
+</section>
+
 <section id="contact">
     <h2>Contáctanos</h2>
-    <p>¿Tienes preguntas o sugerencias? ¡Nos encantaría saber de ti! Ponte en contacto con nosotros a través del siguiente formulario o nuestras redes sociales.</p>
+    <p>¿Tienes preguntas o sugerencias? ¡Nos encantaría saber de ti! Ponte en contacto con nosotros a través del siguiente formulario o envíanos un correo electrónico a <a href="mailto:golesporlasalud@gmail.com">golesporlasalud@gmail.com</a>.</p>
+    <form action="mailto:golesporlasalud@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Tu Nombre" required>
+        <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+        <textarea name="message" placeholder="Tu Mensaje" rows="5" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
 </section>
 
 </main>
